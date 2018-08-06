@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" type= "text/css" href="css/style.css"/>
+
+    <style media="screen"> </style>
+  </head>
+  <body>
+
+    <div id="menu-topo">
+      <ul>
+        <li> <a href="telaPrincipal.php"><b>Página Inicial</b></a> </li>
+        <li> <a href="cadastro.php"><b>Cadastro</b></a> </li>
+        <li> <a href="login.php"><b>Login</b></a> </li>
+        <li> <a href="#"><b>Descrição do Jogo</b></a> </li>
+        <li> <a href="comojogar.php"><b>Como Jogar</b></a> </li>
+        <li> <a href="sobre.php"><b>Sobre</b></a> </li>
+      </ul>
+    </div>
+
+      <div class="login">
+
+        <form class="" action="" method="post">
+
+          <img src="img/login.png"  height="150" alt=""> <br>
+
+            <label for=""><b>Usuário ou E-mail:</b></label><br>
+            <input type="text" name="usuario" value="" class="campo" placeholder="usuario@email.com"><br>
+
+            <label for=""><b>Senha:</b></label><br>
+            <input type="password" name="senha" value="" class="campo"  placeholder="Digite sua senha"><br>
+
+            <input type="checkbox" name="lembrar" value="1" id="lembrar">
+            <label for="lembrar"><b>Lembrar minha senha</b></label>
+            <br>
+
+            <input type="submit" name="" value="Entrar" class="botao entrar"><br> <br>
+
+            <a href="esqueceuSenha.php">Esqueceu a senha?</a> <br>
+            <a href="cadastro.php">Cadastre-se</a>
+
+
+        </form>
+      </div>
+
+  </body>
+</html>

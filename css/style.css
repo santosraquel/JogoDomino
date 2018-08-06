@@ -1,0 +1,425 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+		background: #DEB887;
+}
+
+/* ESPAÇOS */
+#container{
+	width: 1350px;
+	height: 659px;
+	border: 1px solid #111;
+	position: relative;
+	margin: 0 auto ;
+	border-radius: 6px;
+	background-color: #DEB887;
+	/*background: url('../img/madeira.jpg');*/
+}
+
+
+#containerMenor{
+	width: 1322px;
+	height: 629px;
+	border: 1px solid #111;
+	position: relative;
+	margin: 10px 10px 10px 10px ;
+	border-radius: 6px;
+	background-color: #696969;
+	background: url('../img/mad4.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#containerJogo{
+	width: 1322px;
+	height: 629px;
+	border: 1px solid #111;
+	position: relative;
+	margin: 0px 10px 10px 0px ;
+	border-radius: 6px;
+	background-color: #696969;
+	background: url('../img/mad4.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.containerPecas{
+	width: 900px;
+	height: 120px;
+	background-color: #DEB887;
+	border-radius: 10px;
+	border: solid 4px #331a00;
+	margin: 0 20px 0 110px;
+	box-shadow: 2px 3px 3px #994d00;
+}
+
+#containerJogador2{
+	border-style: double;
+	border-color: #663300;
+	margin-bottom: 376px;
+	margin-top: 0;
+
+}
+
+#containerJogador1{
+	border-style: double;
+	border-color: #663300;
+	margin-top: 0;
+	margin-bottom: 600px;
+}
+
+#nomeJogador2,#nomeJogador1{
+	border: solid 1px #805500;
+}
+
+/* PONTUAÇÃO */
+#pontuacaoJg1, #pontuacaoJg2{
+		width: 100px;
+		height: 50px;
+		border: solid 1px #994d00;
+		background-color: #ffffff;
+		box-shadow: 2px 3px 3px #994d00;
+		border-radius: 6px;
+		background: radial-gradient(90% 90%, #d6a76a, #fff);
+			float: left;
+}
+
+#pontuacaoJg1{
+	margin-top: 0;
+	margin-bottom:200px;
+
+}
+
+#pontuacaoJg2{
+	margin-top: 572px;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	float: left;
+}
+
+/* DOMINÓS */
+.dominos{
+	width: 50px; /* largura*/
+	height: 90px; /*altura*/
+	position: absolute;
+	border-radius: 10px;
+	border: 1px ;
+	margin-left: 25px;
+	float: left;
+	margin: 225px 296px 200px 190px;
+}
+
+
+
+.face{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transition: all 1s;
+	backface-visibility: hidden; /* Visibilidade do verso Hidden(Oculto)*/
+}
+
+.versoDomino{
+	background: url('../img/mattt.jpg');
+	}
+
+.versoDomino.virandoDom{
+
+	transform: rotateY(180deg);
+}
+
+.frenteDomino{
+	background-color:#604020; /* cor do elemento, nesse caso o dominó */
+	color: #FFFFFF;
+	border: solid #000000;
+
+	/*padding: 1px 3px;*/
+	transform: rotateY(-180deg);
+}
+
+.frenteDomino.virandoDom{
+	border: solid 1.3px #FFFFFF;
+	transform: rotateY(0deg);
+
+}
+
+.dominos:hover{
+	box-shadow: 5px 6px 10px #000000;
+}
+
+
+.centralizado{
+    text-align: center;
+    /*vertical-align: text-top;*/
+  }
+
+  .dominoSuperior, .dominoInferior{
+    /* Ajusta o padding para jogar o texto mais centralizado no meio */
+    padding-top: 15px;
+    /* Ajusta o de baixo para jogar a linha e o resto mais para baixo */
+    padding-bottom: 10px;
+  }
+
+  .divisoria{
+    border: solid 1px #FFFFFF;
+    margin-left: 6px;
+    margin-right: 6px;
+
+  }
+
+/*verso LARGURA:878px  ALTURA: 1525 px*/
+
+
+/* TELA LOGIN */
+
+.login{
+
+    background-color: #ffffff;
+  	border: 1px solid #86592d;
+		border-radius: 10px;
+    width: 300px;
+    text-align: center;
+
+    /*20px para cima e para baixo*/
+    /*automático para as laterais*/
+    margin: 75px auto;
+    padding: 50px;
+		background: radial-gradient(80% 80%, #d6a76a, #fff);
+		box-shadow: 4px 5px 5px #994d00;
+  }
+
+  /*formatar os inputs que tem a classe "campo" que estão dentro da
+  classe "login".
+  É possível utilizar vários seletores para formatar vários elementos
+  com propriedades comuns
+  */
+  .login .campo, .login .botao{
+    border: 1px solid #86592d;
+		border-radius: 4px;
+    /*"engorda" os elementos da classe campo*/
+    padding: 10px 5px;
+    width: 250px;
+  }
+
+  /*aplica essas propriedades somente no botão*/
+  .login .botao{
+    background-color:#c68c53;
+    color: #000000;
+		border-radius: 6px ;
+		width: 100px;
+		border: #996633;
+		box-shadow: 4px 4px 1px #994d00;
+  }
+
+	.login .botao:hover{
+		box-shadow: 4px 4px 7px #994d00;
+	}
+
+	/* PÁGINA PRINCIPAL */
+	#menu-topo ul{
+			 /* Só aplica-se ao elemento ul
+			 que está dentro do id menu-topo */
+			 background-color:#996633;
+			 list-style-type: none;
+			 box-shadow: #994d00 2px 5px 6px;
+			 text-align: center;
+			 font-size: 18px;
+			 /*Define uma largura máxima para a lista.
+			 Útil para fazer menu na vertical.*/
+			 /*width: 200px;*/
+		 }
+
+		 #menu-topo ul li{
+			 /*Usado para mostrar o menu em linha*/
+			 display: inline;
+		 }
+		 #menu-topo ul a{
+			 color: #ffffff;
+			 text-decoration: none;
+			 display: inline-block;
+			 padding: 5px 10px;
+		 }
+		 #menu-topo ul a:hover{
+			 background-color:#d2a679;
+		 }
+
+
+		 /* TELA CADASTRO */
+
+		 .cadastro{
+
+ 		    background-color: #ffffff;
+ 		  	border: 1px solid #86592d;
+ 				border-radius: 10px;
+ 		    width: 300px;
+ 		    text-align: center;
+
+ 		    /*20px para cima e para baixo*/
+ 		    /*automático para as laterais*/
+ 		    margin: 30px auto;
+ 		    padding: 50px;
+ 				background: radial-gradient(80% 80%, #d6a76a, #fff);
+ 				box-shadow: 4px 5px 5px #994d00;
+ 		  }
+
+ 		  /*formatar os inputs que tem a classe "campo" que estão dentro da
+ 		  classe "login".
+ 		  É possível utilizar vários seletores para formatar vários elementos
+ 		  com propriedades comuns
+ 		  */
+ 		  .cadastro .campo, .cadastro .botao{
+ 		    border: 1px solid #86592d;
+ 				border-radius: 4px;
+ 		    /*"engorda" os elementos da classe campo*/
+ 		    padding: 10px 5px;
+ 		    width: 250px;
+ 		  }
+
+ 		  /*aplica essas propriedades somente no botão*/
+ 		  .cadastro .botao{
+ 		    background-color:#c68c53;
+ 		    color: #000000;
+ 				border-radius: 6px ;
+ 				width: 100px;
+ 				border: #996633;
+ 				box-shadow: 4px 4px 1px #994d00;
+				clear: left;
+				margin: 10px;
+ 		  }
+
+ 			.cadastro .botao:hover{
+ 				box-shadow: 4px 4px 7px #994d00;
+ 			}
+
+
+			/* TELA ESQUECEU SENHA */
+
+ 		 .esqueceuSenha{
+
+  		    background-color: #ffffff;
+  		  	border: 1px solid #86592d;
+  				border-radius: 10px;
+  		    width: 300px;
+  		    text-align: center;
+
+  		    /*20px para cima e para baixo*/
+  		    /*automático para as laterais*/
+  		    margin: 110px auto;
+  		    padding: 50px;
+  				background: radial-gradient(80% 80%, #d6a76a, #fff);
+  				box-shadow: 4px 5px 5px #994d00;
+  		  }
+
+  		  /*formatar os inputs que tem a classe "campo" que estão dentro da
+  		  classe "login".
+  		  É possível utilizar vários seletores para formatar vários elementos
+  		  com propriedades comuns
+  		  */
+  		  .esqueceuSenha .campo, .esqueceuSenha .botao{
+  		    border: 1px solid #86592d;
+  				border-radius: 4px;
+  		    /*"engorda" os elementos da classe campo*/
+  		    padding: 10px 5px;
+  		    width: 250px;
+  		  }
+
+  		  /*aplica essas propriedades somente no botão*/
+  		  .esqueceuSenha .botao{
+  		    background-color:#c68c53;
+  		    color: #000000;
+  				border-radius: 6px ;
+  				width: 100px;
+  				border: #996633;
+  				box-shadow: 4px 4px 1px #994d00;
+ 				clear: left;
+ 				margin: 10px;
+
+  		  }
+
+  			.esqueceuSenha .botao:hover{
+  				box-shadow: 4px 4px 7px #994d00;
+  			}
+
+
+				/* TELA COMO JOGAR */
+				.RegrasJogo{
+
+	   		    background-color: #ffffff;
+	   		  	border: 1px solid #86592d;
+	   				border-radius: 10px;
+	   		    width: 900px;
+	   		    text-align: center;
+
+	   		    /*20px para cima e para baixo*/
+	   		    /*automático para as laterais*/
+	   		    margin: 20px auto;
+	   		    padding: 50px;
+	   				background: radial-gradient(80% 80%, #d6a76a, #fff);
+	   				box-shadow: 4px 5px 5px #994d00;
+						font-size: 25px;
+						font-family: inherit;
+
+	   		  }
+
+				.regras{
+					font-size: 20px;
+					text-align: justify;
+				}
+
+
+				/* TELA SOBRE */
+				.sobre{
+
+	   		    background-color: #ffffff;
+	   		  	border: 1px solid #86592d;
+	   				border-radius: 10px;
+	   		    width: 900px;
+	   		    text-align: center;
+
+	   		    /*20px para cima e para baixo*/
+	   		    /*automático para as laterais*/
+	   		    margin: 20px auto;
+	   		    padding: 50px;
+	   				background: radial-gradient(80% 80%, #dfbf9f, #fff);
+	   				box-shadow: 4px 5px 5px #994d00;
+						font-size: 25px;
+						font-family: inherit;
+
+	   		  }
+
+					.sobre, p{
+						font-size: 18px;
+						text-align: justify;
+					}
+
+
+/* MONTANTE */
+.containerMontante{
+	width: 200px;
+	height: 500px;
+	background-color: #DEB887;
+	border-radius: 10px;
+	border: solid 4px #331a00;
+	margin:0 0 0 0;
+	box-shadow: 2px 3px 3px #994d00;
+	margin-top: 65px;
+	float: right;
+}
+
+#montante{
+	border-style: double;
+	border-color: #663300;
+	margin-bottom: 0;
+}
+
+#nomeMontante{
+	border: solid 1px #805500;
+}
