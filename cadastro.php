@@ -23,8 +23,8 @@
       <div class="cadastro">
 
         <img src="img/cadast.png"  height="150" width="160"alt=""> <br>
-          <!-- controle/cadastro.php DEFININDO ARQUIVO DE DESTINO -->
-        <form class="" action="controle/cadastro.php" method="post">
+
+        <form class="" action="" method="post">
             <label for=""><b>Nome:</b></label> <br>
               <input type="text" name="nome" value="" class="campo" placeholder="Digite seu nome"><br>
 

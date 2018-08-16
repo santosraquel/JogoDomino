@@ -31,10 +31,13 @@
       <br><br>
 
       <h2>Porque criou este jogo?</h2>
-      <br> <br>
+      <br>
+          <p>Como sabemos a operação de multiplicação é um conteúdo que está presente no ensino da matemática desde as séries iniciais do ensino fundamental, e embora esta operação seja decorrente das repetidas adições de parcelas iguais, muitos alunos ainda possuem dificuldades em entender, compreender e aplicar a multiplicação.</p>
+       <br>
+
 
       <h2>Quais os objetivos do jogo?</h2> <br>
-      <p>Este jogo foi desenvolvido com o objetivo de criar uma ferramenta computacional para que professores de matemática do ensino fundamental pudessem disponibilizar aos seus alunos, oportunizando que estes de forma lúdica tenham contato ao conhecimento  </p>
+      <p>  Este jogo foi desenvolvido com o objetivo de criar uma ferramenta computacional para que professores de matemática do ensino fundamental pudessem disponibilizar aos seus alunos, oportunizando que estes de forma lúdica tenham contato ao conhecimento e sejam motivados a testarem suas habilidades matemáticas, efetuar as multiplicações, treinar a tabuada e consequentemente refletirem a respeito da sua própria aprendizagem. </p>
       </div>
 
   </body>

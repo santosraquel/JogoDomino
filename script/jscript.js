@@ -36,41 +36,48 @@
 	}
 	}
 
-	function dragStart(ev){
-		// dataTransfer contém o elemento que foi clicado ou passado como parâmetro
-		// setData é inserido um elemento
-		ev.dataTransfer.setData("ID",ev.target.getAttribute('id'));
-
-	}
-
-	// Função para eveitar que um elemento quando clicado fique selecionado
-
-	function dragOver(ev){
-		return false;
-	}
-
-	// Função que será executado quando soltar o dominó
-	function dragDrop(ev){
-		var dominoSelecionado = ev.dataTransfer.getData("ID");
-		// appendChild: adicionando um filho
-		ev.target.appendChild(document.getElementById(dominoSelecionado));
-	}
-
-
-	// var canvas = document.getElementById("mycanvas");
-	// var ctx = canvas.getContext("2d");
-	// var jogador1Superior ={
-	// 	score:0
+	// function dragStart(ev){
+	// 	// dataTransfer contém o elemento que foi clicado ou passado como parâmetro
+	// 	// setData é inserido um elemento
+	// 	ev.dataTransfer.setData("ID",ev.target.getAttribute('id'));
+	//
 	// }
 	//
-	// var jogador2Inferior = {
-	// 	score:0
+	// // Função para eveitar que um elemento quando clicado fique selecionado
+	//
+	// function dragOver(ev){
+	// 	return false;
 	// }
-	// function desenha(){
-	// 	ctx.font = "20px Arial";
-	// 	ctx.fillText("Pontuação Jogador 1: " + jogador1Superior.score, 50, 20);
-	// 	ctx.fillText("Pontuação Jogador 1: " + jogador2Inferior.score, 50, 20);
+	//
+	// // Função que será executado quando soltar o dominó
+	// function dragDrop(ev){
+	// 	var dominoSelecionado = ev.dataTransfer.getData("ID");
+	// 	// appendChild: adicionando um filho
+	// 	ev.target.appendChild(document.getElementById(dominoSelecionado));
 	// }
-	// desenha();
+
+
+	function allowDrop(ev) {
+	    ev.preventDefault();
+	}
+
+	function drag(ev) {
+	    ev.dataTransfer.setData("div",ev.target.getAttribute('id'));
+	}
+
+	function drop(ev) {
+	    ev.preventDefault();
+	    var data = ev.dataTransfer.getData("div");
+	    ev.target.appendChild(document.getElementById(data));
+	}
+
+	$(document).ready(function(){
+    $("button").click(function(){
+			$("#montante").animate({
+					width: 'toggle'
+			});
+    });
+});
+
 
 }());
