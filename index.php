@@ -9,8 +9,8 @@
   <!--(/jogodomino/css/style.css): passando qual é o nome do arquivo css -->
   <!--(/jogodomino/css/style.css): pasta jogodomino, dentro dessa pasta há uma outra pasta chamada css com um arquivo style.css -->
 
-  <script src= "jquery/jquery-3.3.1.min"></script>
-  <style media="screen"> </style>
+  <script src= "jquery/jquery-3.3.1.min.js"></script>
+  <!-- <style media="screen"> </style> -->
 
 
 </head>
@@ -26,7 +26,11 @@
           <p><b>Pontos:</b></p>
         </div>
 
-        <div class= "containerPecas" id="containerJogador2">
+        <div id="peca" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+        </div>
+
+        <div class= "containerPecas" id="containerJogador2" ondrop="drop(event)" ondragover="allowDrop(event)" >
             <div id="nomeJogador2" align="center" > <b>JOGADOR 2</b></div>
 
             <div id="jg2Peca1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
@@ -41,57 +45,54 @@
 
       </div>
 
-
 <!-- Peças de Dominó e Montante -->
-      <div id="meio">
+     <div id="conteudo" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-        <button type="button" name="" id="botaoMontante"></button>
+       <button type="button" name="" id="botaoMontante"></button>
 
-        <div class= "containerMontante" id="montante">
-          <div id="nomeMontante" align="center"><b>MONTANTE</b></div>
+       <div class= "containerMontante" id="montante">
+         <div id="nomeMontante" align="center"><b>MONTANTE</b></div>
 
-          <div id="montPeca1"> </div>
-          <div id="montPeca2"> </div>
-          <div id="montPeca3"> </div>
-          <div id="montPeca4"> </div>
-          <div id="montPeca5"> </div>
-          <div id="montPeca6"> </div>
-          <div id="montPeca7"> </div>
-          <div id="montPeca8"> </div>
-          <div id="montPeca9"> </div>
-          <div id="montPeca10"> </div>
+         <div id="montPeca1"> </div>
+         <div id="montPeca2"> </div>
+         <div id="montPeca3"> </div>
+         <div id="montPeca4"> </div>
+         <div id="montPeca5"> </div>
+         <div id="montPeca6"> </div>
+         <div id="montPeca7"> </div>
+         <div id="montPeca8"> </div>
+         <div id="montPeca9"> </div>
+         <div id="montPeca10"> </div>
 
         </div>
 
-        <div class="dominos" id="domino0">
-          <div class="face versoDomino"></div>
+    <div class="dominos" id="domino0" draggable="true" ondragstart="drag(event)" width="50px" height="90px">
+          <div class="face versoDomino" ></div>
           <div class="face frenteDomino">
-
             <div class="dominoSuperior centralizado">
               <b>9x10</b>
             </div>
             <hr class="divisoria"/>
             <div class="dominoInferior centralizado">
               <b>80</b>
-
             </div>
           </div>
         </div>
+        </span>
 
         <div class="dominos" id="domino1">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
             <div class="dominoSuperior centralizado">
               <b>5x5</b>
             </div>
             <hr class="divisoria"/>
             <div class="dominoInferior centralizado">
               <b>90</b>
-
             </div>
           </div>
         </div>
+
 
         <div class="dominos" id="domino2">
           <div class="face versoDomino"></div>
@@ -438,18 +439,10 @@
 
       </div>
 
-
-
     </div>
   </div>
 
+<script type="text/javascript" src="script/jscript.js"></script>
 
-
-
-
-
-
-<!-- </div> -->
-<script type="text/javascript" src="/domino/script/jscript.js"></script>
 </body>
 </html>

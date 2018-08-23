@@ -17,9 +17,7 @@ body{
 	margin: 0 auto ;
 	border-radius: 6px;
 	background-color: #DEB887;
-	/*background: url('../img/madeira.jpg');*/
 }
-
 
 #containerMenor{
 	width: 1322px;
@@ -28,26 +26,21 @@ body{
 	position: relative;
 	margin: 10px 10px 10px 10px ;
 	border-radius: 6px;
-	background-color: #696969;
 	background: url('../img/mad4.jpg');
 	background-attachment: fixed;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-/*#containerJogo{
+#topo{
 	width: 1322px;
-	height: 629px;
-	border: 1px solid #111;
-	position: relative;
-	margin: 0px 10px 10px 0px ;
-	border-radius: 6px;
-	background-color: #696969;
-	background: url('../img/mad4.jpg');
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}*/
+	height: 130px;
+}
+#conteudo{
+	width: 1322px;
+	height: 365px;
+
+}
 
 .containerPecas{
 	width: 700px;
@@ -89,38 +82,31 @@ body{
 		border-radius: 6px;
 		background: radial-gradient(90% 90%, #d6a76a, #fff);
 		float: left;
-			clear:none;
+
 }
 
-#pontuacaoJg2,#pontuacaoJg1{
-	margin-top: 0;
-	margin-bottom:0;
-	margin-left: 5px;
-	clear:left;
+#pontuacaoJg1{
+margin-top:70px;
+margin-left: 7px;
 }
 
-/*#pontuacaoJg1{
-	margin-top: 323px;
-	margin-left: 5px;
-	margin-bottom: 0;
-	margin-right: 400px;
-	margin-right: 0;
-	/* clear:left;
-}*/
+
+#pontuacaoJg2{
+margin-top: 5px;
+margin-left: 7px;
+}
 
 /* DOMINÓS */
 .dominos{
-	width: 50px; /* largura*/
-	height: 90px; /*altura*/
-	position: absolute;
+	width: 50px;
+	height: 90px;
+	position: absolute; /*REVER*/
 	border-radius: 10px;
 	border: 1px ;
 	margin-left: 25px;
 	float: left;
-	margin: 0 10px 10px 0;
+	margin: 210px 10px 10px 300px;
 }
-
-
 
 .face{
 	width: 100%;
@@ -136,7 +122,6 @@ body{
 	}
 
 .versoDomino.virandoDom{
-
 	transform: rotateY(180deg);
 }
 
@@ -178,8 +163,6 @@ body{
     margin-right: 6px;
 
   }
-
-/*verso LARGURA:878px  ALTURA: 1525 px*/
 
 
 /* TELA LOGIN */
@@ -257,10 +240,8 @@ body{
 
 
 		 /* TELA CADASTRO */
-
-		 .cadastro{
-
- 		    background-color: #ffffff;
+		 		.cadastro{
+			 	background-color: #ffffff;
  		  	border: 1px solid #86592d;
  				border-radius: 10px;
  		    width: 300px;
@@ -305,10 +286,8 @@ body{
 
 
 			/* TELA ESQUECEU SENHA */
-
- 		 .esqueceuSenha{
-
-  		    background-color: #ffffff;
+ 		 			.esqueceuSenha{
+					background-color: #ffffff;
   		  	border: 1px solid #86592d;
   				border-radius: 10px;
   		    width: 300px;
@@ -322,11 +301,6 @@ body{
   				box-shadow: 4px 5px 5px #994d00;
   		  }
 
-  		  /*formatar os inputs que tem a classe "campo" que estão dentro da
-  		  classe "login".
-  		  É possível utilizar vários seletores para formatar vários elementos
-  		  com propriedades comuns
-  		  */
   		  .esqueceuSenha .campo, .esqueceuSenha .botao{
   		    border: 1px solid #86592d;
   				border-radius: 4px;
@@ -335,7 +309,7 @@ body{
   		    width: 250px;
   		  }
 
-  		  /*aplica essas propriedades somente no botão*/
+
   		  .esqueceuSenha .botao{
   		    background-color:#c68c53;
   		    color: #000000;
@@ -343,9 +317,8 @@ body{
   				width: 100px;
   				border: #996633;
   				box-shadow: 4px 4px 1px #994d00;
- 				clear: left;
- 				margin: 10px;
-
+ 					clear: left;
+ 					margin: 10px;
   		  }
 
   			.esqueceuSenha .botao:hover{
@@ -354,9 +327,8 @@ body{
 
 
 				/* TELA COMO JOGAR */
-				.RegrasJogo{
-
-	   		    background-color: #ffffff;
+						.RegrasJogo{
+						background-color: #ffffff;
 	   		  	border: 1px solid #86592d;
 	   				border-radius: 10px;
 	   		    width: 900px;
@@ -370,8 +342,7 @@ body{
 	   				box-shadow: 4px 5px 5px #994d00;
 						font-size: 25px;
 						font-family: inherit;
-
-	   		  }
+	   		    }
 
 				.regras{
 					font-size: 20px;
@@ -409,12 +380,10 @@ body{
 #botaoMontante{
 	width: 30px;
 	height: 30px;
-	background-color: #DEB887;
 	border-radius: 5px;
 	border: solid 1px #331a00;
-	margin:0 0 0 0;
 	box-shadow: 2px 2px 2px #994d00;
-	margin-top: 0;
+	margin-top: 182.5px;
 	float: right;
 	background: url('../img/seta.png');
 
@@ -425,21 +394,19 @@ body{
 }
 
 .containerMontante{
-	width: 150px;
-	height: 530px;
+	width: 380px;
+	height: 230px;
 	background-color: #DEB887;
 	border-radius: 10px;
 	border: solid 4px #331a00;
-	margin:0 0 0 0;
 	box-shadow: 2px 3px 3px #994d00;
-	margin-top: 50px;
 	float: right;
 }
 
 #montante{
 	border-style: double;
 	border-color: #663300;
-	margin-bottom: 0;
+	margin-top: 60px;
 }
 
 #nomeMontante{
@@ -480,4 +447,16 @@ body{
 	float: inherit;
 	margin-top: 5px;
 	margin-right: 15px;
+}
+
+
+#peca{
+width: 50px; /* largura*/
+height: 90px; /*altura*/
+border-radius: 10px;
+border: 1px solid #994d00;
+margin-left: 25px;
+float: left;
+margin-top: 5px;
+
 }

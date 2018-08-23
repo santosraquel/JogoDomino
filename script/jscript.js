@@ -56,28 +56,60 @@
 	// 	ev.target.appendChild(document.getElementById(dominoSelecionado));
 	// }
 
+	//
+	// function allowDrop(ev) {
+	//     ev.preventDefault();
+	// }
+	//
+	// function drag(ev) {
+	//     ev.dataTransfer.setData("div",ev.target.getAttribute('id'));
+	// }
+	//
+	// function drop(ev) {
+	//     ev.preventDefault();
+	//     var data = ev.dataTransfer.getData("div");
+	//     ev.target.appendChild(document.getElementById(data));
+	// }
 
-	function allowDrop(ev) {
-	    ev.preventDefault();
+
+	// function allowDrop(ev) {
+	//     ev.preventDefault();
+	// }
+	//
+	// // function drag(ev) {
+	// //     ev.dataTransfer.setData("text", ev.target.id);
+	// // }
+	// //
+	// // function drop(ev) {
+	// //     ev.preventDefault();
+	// //     var data = ev.dataTransfer.getData("text");
+	// //     ev.target.appendChild(document.getElementById(data));
+	// // }
+
+	function allowDrop(ev){
+		ev.preventDefault();
 	}
 
-	function drag(ev) {
-	    ev.dataTransfer.setData("div",ev.target.getAttribute('id'));
+	function dragDrop(ev){
+		ev.dataTransfer.setData("text",ev.target.id);
 	}
 
-	function drop(ev) {
-	    ev.preventDefault();
-	    var data = ev.dataTransfer.getData("div");
-	    ev.target.appendChild(document.getElementById(data));
+	function drop(ev){
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+
+		ev.target.appendChild(document.getElementById(data));
 	}
 
 	$(document).ready(function(){
-    $("button").click(function(){
-			$("#montante").animate({
-					width: 'toggle'
-			});
-    });
-});
+	    $("button").click(function(){
+	        $("#montante").animate({
+						width: 'toggle'
+					});
+
+	    });
+	});
+
 
 
 }());
