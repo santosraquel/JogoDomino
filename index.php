@@ -26,10 +26,6 @@
           <p><b>Pontos:</b></p>
         </div>
 
-        <div id="peca" ondrop="drop(event)" ondragover="allowDrop(event)" >
-
-        </div>
-
         <div class= "containerPecas" id="containerJogador2" ondrop="drop(event)" ondragover="allowDrop(event)" >
             <div id="nomeJogador2" align="center" > <b>JOGADOR 2</b></div>
 
@@ -50,6 +46,7 @@
 
        <button type="button" name="" id="botaoMontante"></button>
 
+
        <div class= "containerMontante" id="montante">
          <div id="nomeMontante" align="center"><b>MONTANTE</b></div>
 
@@ -69,27 +66,16 @@
     <div class="dominos" id="domino0" draggable="true" ondragstart="drag(event)" width="50px" height="90px">
           <div class="face versoDomino" ></div>
           <div class="face frenteDomino">
-            <div class="dominoSuperior centralizado">
-              <b>9x10</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>80</b>
-            </div>
-          </div>
+            <img src="dominos/dom1.png" alt="">
         </div>
-        </span>
+
+      </div>
+
 
         <div class="dominos" id="domino1">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-            <div class="dominoSuperior centralizado">
-              <b>5x5</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>90</b>
-            </div>
+            <img src="dominos/dom2.png" alt="">
           </div>
         </div>
 
@@ -97,14 +83,7 @@
         <div class="dominos" id="domino2">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>1x6</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>25</b>
-            </div>
+            <img src="dominos/dom3.png" alt="">
           </div>
         </div>
 
@@ -112,56 +91,28 @@
         <div class="dominos" id="domino3">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>8x1</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>6</b>
-            </div>
+            <img src="dominos/dom4.png" alt="">
           </div>
         </div>
 
         <div class="dominos" id="domino4">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>5x2</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>8</b>
-            </div>
+            <img src="dominos/dom5.png" alt="">
           </div>
         </div>
 
         <div class="dominos" id="domino5">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>3x4</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>10</b>
-            </div>
+            <img src="dominos/dom6.png" alt="">
           </div>
         </div>
 
         <div class="dominos" id="domino6">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>2x9</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>12</b>
-            </div>
+            <img src="dominos/dom7.png" alt="">
           </div>
         </div>
 
@@ -169,14 +120,7 @@
         <div class="dominos" id="domino7">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>10x2</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>18</b>
-            </div>
+            <img src="dominos/dom8.png" alt="">
           </div>
         </div>
 
@@ -184,14 +128,7 @@
         <div class="dominos" id="domino8">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-
-            <div class="dominoSuperior centralizado">
-              <b>6x4</b>
-            </div>
-            <hr class="divisoria"/>
-            <div class="dominoInferior centralizado">
-              <b>20</b>
-            </div>
+            
           </div>
         </div>
 

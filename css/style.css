@@ -121,14 +121,19 @@ margin-left: 7px;
 	background: url('../img/mattt.jpg');
 	}
 
+.frenteDomino{
+	/* background: url('../img/mattt.jpg'); */
+
+}
+
 .versoDomino.virandoDom{
 	transform: rotateY(180deg);
 }
 
 .frenteDomino{
-	background-color:#604020; /* cor do elemento, nesse caso o dominó */
+	/* background-color:#604020; /* cor do elemento, nesse caso o dominó 
 	color: #FFFFFF;
-	border: solid #000000;
+	border: solid #000000; */
 
 	/*padding: 1px 3px;*/
 	transform: rotateY(-180deg);
@@ -209,6 +214,7 @@ margin-left: 7px;
 	.login .botao:hover{
 		box-shadow: 4px 4px 7px #994d00;
 	}
+
 
 	/* PÁGINA PRINCIPAL */
 	#menu-topo ul{
@@ -459,4 +465,34 @@ margin-left: 25px;
 float: left;
 margin-top: 5px;
 
+}
+
+/* TELA INICIAL */
+
+	.btTelaInicial{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#c68c53;
+	color: #000000;
+	border-radius: 6px ;
+	width: 200px;
+	border: #996633;
+	box-shadow: 4px 4px 1px #994d00;
+	font-size: 25px;
+	font-family: "Times New Roman";
+	margin: 5px 5px;
+}
+
+.btTelaInicial:hover{
+	box-shadow: 6px 6px 8px #994d00;
+}
+
+.botoes{
+	/* background-color: green; */
+	width: 270px;
+			/* cima direita baixo esquerda */
+	margin: 350px auto 10px auto;
 }
