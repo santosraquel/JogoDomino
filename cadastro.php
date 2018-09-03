@@ -11,7 +11,7 @@
 
     <!-- <div id="menu-topo">
       <ul>
-        
+
             include("menu.php");
 
     </div> -->
@@ -36,6 +36,8 @@
             <input type="submit" name="" value="Cadastrar" class="botao cadastrar">
 
             <input type="reset" name="" value="Limpar" class="botao limpar">
+            
+            <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar"><b>VOLTAR</b></a> <br>
 
 
 

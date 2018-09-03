@@ -13,9 +13,10 @@
   <body>
  <div id="conteudo">
 
-   <!-- <div class="menus">
-     Aqui vai o menu
-   </div> -->
+    <div class="logo">
+     DOMINÓ <br>
+     MATEMÁTICO
+   </div>
 
    <div class="botoes">
 
