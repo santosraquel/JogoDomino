@@ -526,5 +526,10 @@ box-shadow: 6px 6px 8px #994d00;
 }
 
 .logo{
-	
+	text-align: center;
+	font-family: "Times New Roman";
+	font-size: 50PX;
+	margin: 5px 5px;
+	padding-top: 10px;
+	padding-bottom: 0;
 }

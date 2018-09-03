@@ -14,8 +14,8 @@
  <div id="conteudo">
 
     <div class="logo">
-     DOMINÓ <br>
-     MATEMÁTICO
+     <b>DOMINÓ</b> <br>
+     <b>MATEMÁTICO</b>
    </div>
 
    <div class="botoes">
