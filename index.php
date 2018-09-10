@@ -1,3 +1,14 @@
+<?php
+include_once("bancoDados/conexao.php");
+if(!$conexaoBanco){
+  echo "Conexão não realizada!";
+}
+
+// $imagem = mysqli_query("SELECT imagem from imagens_1 where cod_img = '1'");
+// echo($imagem);
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +23,6 @@
   <script src= "jquery/jquery-3.3.1.min.js"></script>
   <!-- <style media="screen"> </style> -->
 
-
 </head>
 <body>
 
@@ -22,9 +32,9 @@
 
       <div id="topo">
 
-        <div id="pontuacaoJg2">
+        <!-- <div id="pontuacaoJg2">
           <p><b>Pontos:</b></p>
-        </div>
+        </div> -->
 
         <div class= "containerPecas" id="containerJogador2" ondrop="drop(event)" ondragover="allowDrop(event)" >
             <div id="nomeJogador2" align="center" > <b>JOGADOR 2</b></div>
@@ -252,9 +262,9 @@
 
       <!-- Pontuação Jogador 1 e espaço Jogador 1-->
       <div id="base">
-        <div id="pontuacaoJg1">
+        <!-- <div id="pontuacaoJg1">
           <p><b>Pontos:</b> </p>
-        </div>
+        </div> -->
 
         <div class= "containerPecas" id="containerJogador1">
           <div id="nomeJogador1" align="center"> <b>JOGADOR 1</b> </div>

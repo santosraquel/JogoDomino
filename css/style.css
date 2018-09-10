@@ -1,14 +1,14 @@
+/* CORPO DA PÁGINA */
 *{
 	margin: 0;
 	padding: 0;
 }
 
-
 body{
 		background: #DEB887;
 }
 
-/* ESPAÇOS */
+/* ESPAÇO DAS PEÇAS DOS JOGADORES*/
 #container{
 	width: 1350px;
 	height: 659px;
@@ -32,15 +32,6 @@ body{
 	background-repeat: no-repeat;
 }
 
-#topo{
-	width: 1322px;
-	height: 130px;
-}
-#conteudo{
-	width: 1322px;
-	height: 365px;
-
-}
 
 .containerPecas{
 	width: 700px;
@@ -52,13 +43,20 @@ body{
 	box-shadow: 2px 3px 3px #994d00;
 }
 
+#topo{
+	width: 1322px;
+	height: 130px;
+}
+#conteudo{
+	width: 1322px;
+	height: 365px;
+}
+
 #containerJogador2{
 	border-style: double;
 	border-color: #663300;
 	margin-bottom: 376px;
 	margin-top: 0;
-
-
 }
 
 #containerJogador1{
@@ -82,7 +80,6 @@ body{
 		border-radius: 6px;
 		background: radial-gradient(90% 90%, #d6a76a, #fff);
 		float: left;
-
 }
 
 #pontuacaoJg1{
@@ -123,7 +120,6 @@ margin-left: 7px;
 
 .frenteDomino{
 	/* background: url('../img/mattt.jpg'); */
-
 }
 
 .versoDomino.virandoDom{
@@ -134,7 +130,6 @@ margin-left: 7px;
 	/* background-color:#604020; /* cor do elemento, nesse caso o dominó
 	color: #FFFFFF;
 	border: solid #000000; */
-
 	/*padding: 1px 3px;*/
 	transform: rotateY(-180deg);
 }
@@ -148,7 +143,6 @@ margin-left: 7px;
 .dominos:hover{
 	box-shadow: 5px 6px 10px #000000;
 }
-
 
 .centralizado{
     text-align: center;
@@ -171,15 +165,12 @@ margin-left: 7px;
 
 
 /* TELA LOGIN */
-
 .login{
-
     background-color: #ffffff;
   	border: 1px solid #86592d;
 		border-radius: 10px;
     width: 300px;
     text-align: center;
-
     /*20px para cima e para baixo*/
     /*automático para as laterais*/
     margin: 75px auto;
@@ -252,7 +243,6 @@ margin-left: 7px;
  				border-radius: 10px;
  		    width: 300px;
  		    text-align: center;
-
  		    /*20px para cima e para baixo*/
  		    /*automático para as laterais*/
  		    margin: 30px auto;
@@ -298,7 +288,6 @@ margin-left: 7px;
   				border-radius: 10px;
   		    width: 300px;
   		    text-align: center;
-
   		    /*20px para cima e para baixo*/
   		    /*automático para as laterais*/
   		    margin: 110px auto;
@@ -339,7 +328,6 @@ margin-left: 7px;
 	   				border-radius: 10px;
 	   		    width: 900px;
 	   		    text-align: center;
-
 	   		    /*20px para cima e para baixo*/
 	   		    /*automático para as laterais*/
 	   		    margin: 20px auto;
@@ -355,10 +343,20 @@ margin-left: 7px;
 					text-align: justify;
 				}
 
+.imagensDomino{
+	width: 85px;
+	height: 160px;
+	align:center;
+}
+
+#imagensDomino{
+	width: 200px;
+	height: 150px;
+	align:center;
+}
 
 				/* TELA SOBRE */
 				.sobre, .RegrasJogo{
-
 	   		    background-color: #ffffff;
 	   		  	border: 1px solid #86592d;
 	   				border-radius: 10px;
@@ -388,6 +386,10 @@ margin-left: 7px;
 						font-family: "Times New Roman";
 					}
 
+					.sobre, p {
+						text-indent: 50px;
+					}
+
 
 /* MONTANTE */
 #botaoMontante{
@@ -399,7 +401,6 @@ margin-left: 7px;
 	margin-top: 182.5px;
 	float: right;
 	background: url('../img/seta.png');
-
 }
 
 #botaoMontante:hover{
@@ -448,7 +449,7 @@ margin-left: 7px;
 	margin-left: 5px;
 	float: inherit;
 	margin-top: 5px;
-		margin-right: 15px;
+	margin-right: 15px;
 }
 
 #montPeca6,#montPeca7,#montPeca8,#montPeca9,#montPeca10{
@@ -471,11 +472,9 @@ border: 1px solid #994d00;
 margin-left: 25px;
 float: left;
 margin-top: 5px;
-
 }
 
 /* TELA INICIAL */
-
 	.btTelaInicial{
 	display: block;
 	text-align: center;
@@ -483,7 +482,6 @@ margin-top: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color:#c68c53;
-	color: #000000;
 	border-radius: 6px ;
 	width: 200px;
 	border: #996633;
@@ -491,6 +489,8 @@ margin-top: 5px;
 	font-size: 25px;
 	font-family: "Times New Roman";
 	margin: 5px 5px;
+	color: #4d2600;
+	text-shadow: 1px 1px 1px #994d00;
 }
 
 .btTelaInicial:hover{
@@ -501,7 +501,7 @@ margin-top: 5px;
 	/* background-color: green; */
 	width: 270px;
 			/* cima direita baixo esquerda */
-	margin: 350px auto 10px auto;
+	margin: 50px auto 10px auto;
 }
 
 .botaoVoltar{
@@ -525,11 +525,16 @@ float: right;
 box-shadow: 6px 6px 8px #994d00;
 }
 
-.logo{
-	text-align: center;
+#logo, #imagemLogo{
+ width: 900px;
+ height: 300px;
+ margin: 10px auto 0 auto;
+}
+
+ /* FONTE DAS LABELS DOS FORMULÁRIOS */
+.fontLabel{
+	font-size: 20px;
 	font-family: "Times New Roman";
-	font-size: 50PX;
-	margin: 5px 5px;
-	padding-top: 10px;
-	padding-bottom: 0;
+	color: #4d2600;
+
 }

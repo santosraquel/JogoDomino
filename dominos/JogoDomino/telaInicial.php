@@ -15,7 +15,8 @@
 
     <div class="logo">
       <div id="logo">
-        <img src="img/logo.png" id="imagemLogo">
+        <b>DOMINÓ</b> <br>
+        <b>MATEMÁTICO</b>
       </div>
    </div>
 
