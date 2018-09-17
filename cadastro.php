@@ -22,7 +22,7 @@ session_start();
                 unset($_SESSION['msg_ok']);
               }
            ?>
-        <form class="" action="cadastrarJogador.php" method="post">
+        <form class="" action="controle/cadastrarJogador.php" method="post">
             <label for="" class="fontLabel"><b>Nome:</b></label> <br>
               <input type="text" name="nome" value="" class="campo" placeholder="Digite seu nome"><br>
 

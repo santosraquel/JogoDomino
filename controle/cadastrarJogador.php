@@ -12,10 +12,10 @@
 session_start();
 
 // Recebendo dados dos campos do formulário e armazendando em uma váriavel
-$nome = $_POST["nome"];
-$email = $_POST["email"];
-$senha = md5($_POST["senha"]);
-$confirmarSenha = md5($_POST["confirmarSenha"]);
+$nome = trim($_POST["nome"]);
+$email = trim($_POST["email"]);
+$senha = trim($_POST["senha"]);
+$confirmarSenha = trim($_POST["confirmarSenha"]);
 
 
 // Validar campos
@@ -39,9 +39,11 @@ if($senha != $confirmarSenha || $senha == ""){
 
 // Criando tabela dos Jogadores cadastrados
 if($validarCampos){
+  $senha = md5($senha . "domino");
+  $senha = md5($senha);
   $conexaoBanco = mysqli_connect('localhost','root','','domino');
   // include_once("bancoDados/conexao.php");
-  $sqlinsert = "INSERT INTO usuario (nome, email, senha) VALUES" . "('$nome','$email','$senha')";
+  $sqlinsert = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome','$email','$senha')";
   $resultado = mysqli_query($conexaoBanco, $sqlinsert);
 //   echo "<table border = '0' cellpadding='3'>";
 // echo "<TR><TD> NOME:</TD><TD><B> $nome </B></TD></TR>";

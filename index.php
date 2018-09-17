@@ -1,8 +1,17 @@
 <?php
-include_once("bancoDados/conexao.php");
-if(!$conexaoBanco){
-  echo "Conexão não realizada!";
+//include_once "controle/verficaLogin.php";
+
+@session_start();
+
+if(!isset($_SESSION['login'])){
+  exit ("Você precisa fazer o login para ver está página!");
 }
+
+// include_once("bancoDados/conexao.php");
+// if(!$conexaoBanco){
+//   echo "Conexão não realizada!";
+// }
+
 
 // $imagem = mysqli_query("SELECT imagem from imagens_1 where cod_img = '1'");
 // echo($imagem);

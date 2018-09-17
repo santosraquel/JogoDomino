@@ -26,7 +26,7 @@ session_start();
             }
          ?>
 
-        <form class="" action="ValidarLogin.php" method="post">
+        <form class="" action="controle/ValidarLogin.php" method="post">
 
           <img src="img/login.png"  height="150" alt=""> <br>
 
