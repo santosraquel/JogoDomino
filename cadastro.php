@@ -17,9 +17,10 @@ session_start();
 
         <img src="img/cadast.png"  height="150" width="160"alt=""> <br>
           <?php
-              if(isset($_SESSION['msg']))
-                echo $_SESSION['msg'];
-                unset($_SESSION['msg']);
+              if(isset($_SESSION['msg_ok'])){
+                echo $_SESSION['msg_ok'];
+                unset($_SESSION['msg_ok']);
+              }
            ?>
         <form class="" action="cadastrarJogador.php" method="post">
             <label for="" class="fontLabel"><b>Nome:</b></label> <br>
@@ -39,8 +40,15 @@ session_start();
             <input type="reset" name="" value="Limpar" class="botao limpar">
 
             <!-- <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar"><b>VOLTAR</b></a> <br> -->
+<?php
 
 
+   if (isset($_SESSION['msg_erro'])){
+     echo $_SESSION['msg_erro'];
+     unset($_SESSION['msg_erro']);
+}
+
+?>
 
         </form>
       </div>

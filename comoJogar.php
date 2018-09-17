@@ -33,12 +33,12 @@
 
         <br><br>
 
-        <h2><b>Regras do jogo:</b></h2><br>
+        <!-- <h2><b>Regras do jogo:</b></h2><br>
 
         <ul>
           <li>Cada jogador só poderá encaixar uma peça por vez;</li>
           <li>Caso o jogador da vez não tenha a peça necessária para encaixar, este poderá comprar peças no montante até encontrar a peça necessária; </li>
-        </ul>
+        </ul> -->
 
 
         <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar"><b>VOLTAR</b></a><br>

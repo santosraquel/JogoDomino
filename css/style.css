@@ -371,6 +371,7 @@ margin-left: 7px;
 	   				box-shadow: 4px 5px 5px #994d00;
 						font-size: 25px;
 						/* font-family: "Times New Roman"; */
+
 	   		  }
 
 					.sobre, p, .regras, li, .RegrasJogo, h2{
@@ -386,9 +387,9 @@ margin-left: 7px;
 						font-family: "Times New Roman";
 					}
 
-					.sobre, p {
+					/* .sobre {
 						text-indent: 50px;
-					}
+					} */
 
 
 /* MONTANTE */

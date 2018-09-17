@@ -16,9 +16,14 @@ session_start();
 
       <div class="login">
         <?php
-            if(isset($_SESSION['msg']))
-              echo $_SESSION['msg'];
-              unset($_SESSION['msg']);
+            if(isset($_SESSION['msg_ok'])){
+              echo $_SESSION['msg_ok'];
+              unset($_SESSION['msg_ok']);
+
+            } else if (isset($_SESSION['msg_erro'])){
+              echo $_SESSION['msg_erro'];
+              unset($_SESSION['msg_erro']);
+            }
          ?>
 
         <form class="" action="ValidarLogin.php" method="post">
