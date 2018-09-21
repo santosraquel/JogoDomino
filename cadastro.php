@@ -39,7 +39,7 @@ session_start();
 
             <input type="reset" name="" value="Limpar" class="botao limpar">
 
-            <!-- <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar"><b>VOLTAR</b></a> <br> -->
+            <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar"><b>VOLTAR</b></a><br>
 <?php
 
 
