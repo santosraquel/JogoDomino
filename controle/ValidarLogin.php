@@ -15,13 +15,15 @@ $senha = trim($_POST["senha"]);
 // Validar campos obrigatórios
 if($usuario != "" && $senha != ""){
   // Faz conexão com o banco de Dados
-  $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+
   // Faz um select com o usuário e a Senha
   //criptografa a Senha
   $senha = md5 ($senha . "domino");
   $senha = md5 ($senha);
    // '$usuario%'"; -- % faz uma pesquisa. Ex: Digitou Raf vai trazer tudo o que tem no banco Raf
- $sql = "SELECT * FROM usuario WHERE (nome LIKE '$usuario' AND senha LIKE '$senha') OR (email LIKE '$usuario' AND senha LIKE '$senha'); ";
+ $sql = "SELECT * FROM Usuario WHERE (nome LIKE '$usuario' AND senha LIKE '$senha') OR (email LIKE '$usuario' AND senha LIKE '$senha'); ";
  $resultado = mysqli_query($conexaoBanco, $sql);
 
 // Mostra na tela o SELECT
