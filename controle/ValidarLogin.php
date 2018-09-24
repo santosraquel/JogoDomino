@@ -15,19 +15,19 @@ $senha = trim($_POST["senha"]);
 // Validar campos obrigatórios
 if($usuario != "" && $senha != ""){
   // Faz conexão com o banco de Dados
-  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
-  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
 
   // Faz um select com o usuário e a Senha
   //criptografa a Senha
   $senha = md5 ($senha . "domino");
   $senha = md5 ($senha);
    // '$usuario%'"; -- % faz uma pesquisa. Ex: Digitou Raf vai trazer tudo o que tem no banco Raf
- $sql = "SELECT * FROM Usuario WHERE (nome LIKE '$usuario' AND senha LIKE '$senha') OR (email LIKE '$usuario' AND senha LIKE '$senha'); ";
+ $sql = "SELECT * FROM usuario WHERE (nome LIKE '$usuario' AND senha LIKE '$senha') OR (email LIKE '$usuario' AND senha LIKE '$senha'); ";
  $resultado = mysqli_query($conexaoBanco, $sql);
 
 // Mostra na tela o SELECT
- echo $sql;
+ // echo $sql;
 
   // Se existir algum registro...
   if (mysqli_num_rows($resultado) > 0) {
@@ -38,47 +38,42 @@ if($usuario != "" && $senha != ""){
   }
   //Se não...
   else{
-    exit ("Usuário ou senha não encontrados!");
+    exit ("<p style='background-color:#86592d;
+  	border: 1px solid #86592d;
+  	border-radius: 10px;
+  	width: 300px;
+  	text-align: center;
+  	margin: 30px auto;
+  	padding: 50px;
+  	background: radial-gradient(70% 60%, #d6a76a, #fff);
+  	box-shadow: 4px 5px 5px #994d00;
+    color: #e60000;
+    font-size:30px;
+    font-family:Times New Roman;
+    margin: 200px auto 200px auto;'><b>
+    Usuário ou senha não encontrados!</b></p>");
+
   }
 } else{
   // pode exibir uma mensagem na tela
-  exit ("<h3>Prencha todos os campos!<h3>");
+  exit ("<h3 style='background-color: #ffffff;
+  border: 1px solid #86592d;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 50px;
+  background: radial-gradient(70% 60%, #d6a76a, #fff);
+  box-shadow: 4px 5px 5px #994d00;
+  color: #e60000;
+  font-size:30px;
+  font-family:Times New Roman;
+  margin: 200px auto 200px auto;'><b>
+  Prencha todos os campos!</b><h3>");
 
   // Redirecionar para outro local
 }
-
-
-//
-// $validarCampos = true;
-// if($usuario == $nome ||  $usuario == $email){
-//   $validarCampos = false;
-// }
-//
-// if($usuario != $nome ||  $usuario != $email){
-//   echo "Login não coincide!";
-//   $validarCampos = false;
-// }
-//
-// if($senha != $senha){
-//   echo "Senhas não coincidem!";
-//   $validarCampos = false;
-// }
-//
-// // Criando tabela dos Jogadores cadastrados
-// if($validarCampos){
-//   include_once("bancoDados/conexao.php");
-//   $sqlinsert = "SELECT nome, email, senha FROM usuario" . "('$nome','$email','$senha')";
-//   $resultado = mysqli_query($conexaoBanco, $sqlinsert);
-// }
-//
-// if(mysqli_insert_id($conexaoBanco)){
-//   $_SESSION['msg'] = "<p style='color:green;'>Jogador cadastrado com sucesso!</p>";
-//   header("Location: index.php"); // ABRE O ARQUIVO INDEX.PHP QUANDO CLICAR NO BOTÃO
-// }else{
-//   $_SESSION['msg'] = "<p style='color:red;'>Atenção: Cadastro do jogador não foi realizado com sucesso!</p>";
-//   header("Location: index.php");
-// }
-//  ?>
+ ?>
 
 </body>
 </html>

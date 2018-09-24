@@ -35,11 +35,11 @@ session_start();
             <label for="" class="fontLabel"><b>Confirmar Senha:</b></label><br>
             <input type="password" name="confirmarSenha" value="" class="campo"  placeholder="Digite sua senha novamente"><br> <br>
 
-            <input type="submit" name="" value="Cadastrar" class="botao cadastrar">
+            <input type="submit" name="" value="Cadastrar" class="botao">
 
-            <input type="reset" name="" value="Limpar" class="botao limpar">
+            <input type="reset" name="" value="Limpar" class="botao">
 
-            <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar"><b>VOLTAR</b></a><br>
+            <a href="telaInicial.php" class="botaoVoltar" id="botaoVoltar">Voltar</a><br>
 <?php
 
 

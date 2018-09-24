@@ -10,15 +10,18 @@
   <body>
 
     <!-- <div id="menu-topo">
-      
+
     </div> -->
 
       <div class="esqueceuSenha">
 
-        <form class="" action="" method="post">
+        <form class="" action="controle/trocarSenha.php" method="post">
 
             <label for=""><b>E-mail:</b></label><br>
             <input type="text" name="email" value="" class="campo" placeholder="usuario@email.com"><br>
+
+            <!-- <label for="" class="fontLabel"><b>Senha:</b></label><br>
+            <input type="password" name="senha" value="" class="campo"  placeholder="Digite sua senha"><br> -->
 
             <label for=""><b>Nova Senha:</b></label><br>
             <input type="password" name="senha" value="" class="campo"  placeholder="Digite sua senha"><br>

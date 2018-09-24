@@ -272,8 +272,36 @@ margin-left: 7px;
  				width: 100px;
  				border: #996633;
  				box-shadow: 4px 4px 1px #994d00;
-				clear: left;
 				margin: 10px;
+				/* clear: left; */
+ 		  }
+
+			.cadastro #botaoVoltar{
+ 		    /* background-color:#c68c53;
+ 		    color: #000000;
+ 				border-radius: 6px ;
+ 				width: 100px;
+				height: 15px;
+ 				border: #996633;
+ 				box-shadow: 4px 4px 1px #994d00;
+				float: inherit;
+				font-size: 14px;
+				font-family: arial; */
+				display: inline;
+				text-align: center;
+				text-decoration: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color:#c68c53;
+				border-radius: 6px ;
+				width: 100px;
+				border: #996633;
+				box-shadow: 4px 4px 1px #994d00;
+				font-size: 15px;
+				font-family: serif;
+				color: #000000;
+				/* text-shadow: 1px 1px 1px #994d00; */
+
  		  }
 
  			.cadastro .botao:hover{
@@ -537,5 +565,4 @@ box-shadow: 6px 6px 8px #994d00;
 	font-size: 20px;
 	font-family: "Times New Roman";
 	color: #4d2600;
-
 }
