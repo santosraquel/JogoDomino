@@ -15,8 +15,8 @@
 
         if($usuario != "" && $senha != ""){
           // Faz conexão com o banco de Dados
-          $conexaoBanco = mysqli_connect('localhost','root','','domino');
-          // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+          // $conexaoBanco = mysqli_connect('localhost','root','','domino');
+          $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
 
      ?>
 

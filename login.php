@@ -43,6 +43,7 @@ session_start();
             <input type="submit" name="" value="Entrar" class="botao entrar"><br> <br>
 
             <a href="esqueceuSenha.php">Esqueceu a senha?</a> <br>
+            <a href="alterarSenha.php">Alterar senha</a> <br>
             <a href="cadastro.php">Cadastre-se</a>
 
 

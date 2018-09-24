@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>Validando Login</title>
   </head>
-  <body>
+  <body style="background-color:#d2a679;">
 
 <?php
 
@@ -15,8 +15,8 @@ $senha = trim($_POST["senha"]);
 // Validar campos obrigatórios
 if($usuario != "" && $senha != ""){
   // Faz conexão com o banco de Dados
-  $conexaoBanco = mysqli_connect('localhost','root','','domino');
-  // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
 
   // Faz um select com o usuário e a Senha
   //criptografa a Senha
