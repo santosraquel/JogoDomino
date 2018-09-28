@@ -20,14 +20,14 @@
             <label for=""><b>E-mail:</b></label><br>
             <input type="text" name="email" value="" class="campo" placeholder="usuario@email.com"><br>
 
-            <!-- <label for="" class="fontLabel"><b>Senha:</b></label><br>
-            <input type="password" name="senha" value="" class="campo"  placeholder="Digite sua senha"><br> -->
-
-            <label for=""><b>Nova Senha:</b></label><br>
+            <label for="" class="fontLabel"><b>Senha atual:</b></label><br>
             <input type="password" name="senha" value="" class="campo"  placeholder="Digite sua senha"><br>
 
+            <label for=""><b>Nova Senha:</b></label><br>
+            <input type="password" name="novaSenha" value="" class="campo"  placeholder="Digite sua senha"><br>
+
             <label for=""><b>Confirmar Nova Senha:</b></label><br>
-            <input type="password" name="confirmarSenha" value="" class="campo"  placeholder="Digite sua senha novamente"><br> <br>
+            <input type="password" name="confirmarNovaSenha" value="" class="campo"  placeholder="Digite sua senha novamente"><br> <br>
 
             <input type="submit" name="" value="Redefinir Senha" class="botao redefinirSenha">
 

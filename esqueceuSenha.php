@@ -15,7 +15,7 @@
 
       <div class="esqueceuSenha">
 
-        <form class="" action="controle/trocarSenha.php" method="post">
+        <form class="" action="controle/redefinirSenha.php" method="post">
 
             <label for=""><b>E-mail:</b></label><br>
             <input type="text" name="email" value="" class="campo" placeholder="usuario@email.com"><br>

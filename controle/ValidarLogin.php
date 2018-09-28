@@ -5,6 +5,10 @@
   </head>
   <body style="background-color:#d2a679;">
 
+<div class="imagemProf">
+  <img src="../img/prof.png" id="imagemProf" style="float: right; width: 600px;
+	height: 550px;">
+</div>
 <?php
 
 // Recebendo dados dos campos do formulário e armazendando em uma váriavel//
@@ -15,8 +19,8 @@ $senha = trim($_POST["senha"]);
 // Validar campos obrigatórios
 if($usuario != "" && $senha != ""){
   // Faz conexão com o banco de Dados
-  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
-  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
 
   // Faz um select com o usuário e a Senha
   //criptografa a Senha
@@ -50,8 +54,9 @@ if($usuario != "" && $senha != ""){
     color: #e60000;
     font-size:30px;
     font-family:Times New Roman;
-    margin: 200px auto 200px auto;'><b>
-    Usuário ou senha não encontrados!</b></p>");
+    margin: 100px auto 200px 450px;
+    float: center;'><b>
+    Atenção: Usuário ou senha incorretos!</b></p>");
 
   }
 } else{
@@ -66,10 +71,10 @@ if($usuario != "" && $senha != ""){
   background: radial-gradient(70% 60%, #d6a76a, #fff);
   box-shadow: 4px 5px 5px #994d00;
   color: #e60000;
-  font-size:30px;
+  font-size:35px;
   font-family:Times New Roman;
-  margin: 200px auto 200px auto;'><b>
-  Prencha todos os campos!</b><h3>");
+  margin: 100px auto 200px 450px;
+  float: center;'><b>Atenção: Prencha todos os campos!</b><h3>");
 
   // Redirecionar para outro local
 }

@@ -15,7 +15,7 @@
 
     <div class="logo">
       <div id="logo">
-        <img src="img/logo.png" id="imagemLogo">
+        <img src="img/logos.png" id="imagemLogo">
       </div>
    </div>
 
@@ -25,7 +25,7 @@
      <br>
      <a href="cadastro.php" class="btTelaInicial" id="botaoCadastrar"><b>CADASTRE-SE</b></a>
      <br>
-     <a href="comoJogar.php"class="btTelaInicial" id="botaoSobre"><b>COMO JOGAR</b></a>
+     <a href="comoJogar.php"class="btTelaInicial" id="botaoComoJogar"><b>COMO JOGAR</b></a>
      <br>
      <a href="sobre.php"class="btTelaInicial" id="botaoSobre"><b>SOBRE</b></a>
    </div>

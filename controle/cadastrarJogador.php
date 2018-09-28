@@ -7,22 +7,32 @@
 
     <h1>Os Jogadores Cadastrados são:</h1>
 
+
+
 <?php
 // Mostrar mensagem
 session_start();
+//  CÓDIGO PARA FAZER COM QUE O USUÁRIO E O E-MAIL SEJAM ÚNICOS
 
 // Recebendo dados dos campos do formulário e armazendando em uma váriavel
 $nome = trim($_POST["nome"]);
 $email = trim($_POST["email"]);
 $senha = trim($_POST["senha"]);
 $confirmarSenha = trim($_POST["confirmarSenha"]);
-
+// $erro = false;
 
 // Validar campos
 $validarCampos = true;
 if($nome == ""){
   echo "Preencha o nome!";
   $validarCampos = false;
+// }else{
+//   $consultaUsuario = "SELECT id FROM usuario WHERE nome = $nome";
+//   $resultado_usuario = mysqli_query($conexaoBanco, $resultado_usuario);
+//   if(($resultado_usuario) AND ($resultado_usuario->num_rows != 0)){
+//     $erro = true;
+//     $_SESSION['msg']="Atenção: Este usuário já existe!";
+//   }
 }
 
 if($email == ""){
@@ -41,16 +51,12 @@ if($senha != $confirmarSenha || $senha == ""){
 if($validarCampos){
   $senha = md5($senha . "domino");
   $senha = md5($senha);
-  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
-  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','','domino');
   // include_once("bancoDados/conexao.php");
   $sqlinsert = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome','$email','$senha')";
   echo $sqlinsert;
   $resultado = mysqli_query($conexaoBanco, $sqlinsert);
-//   echo "<table border = '0' cellpadding='3'>";
-// echo "<TR><TD> NOME:</TD><TD><B> $nome </B></TD></TR>";
-// echo "<TR><TD> E-MAIL:</TD><TD><B> $email </B></TD></TR>";
-// echo "<TR><TD> SENHA:</TD><TD><B> $senha </B></TD></TR>";
 }
 if(mysqli_insert_id($conexaoBanco)){
   $_SESSION['msg_ok'] = "<p style='color:green;'>Jogador cadastrado com sucesso!</p>";

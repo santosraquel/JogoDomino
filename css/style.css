@@ -5,7 +5,10 @@
 }
 
 body{
-		background: #DEB887;
+		/* background: #DEB887; */
+		background: #cceeff;
+		/* background: #99dfff; */
+
 }
 
 /* ESPAÇO DAS PEÇAS DOS JOGADORES*/
@@ -166,8 +169,8 @@ margin-left: 7px;
 
 /* TELA LOGIN */
 .login{
-    background-color: #ffffff;
-  	border: 1px solid #86592d;
+    background-color: #99ff99;
+  	border: 1px solid #006600;
 		border-radius: 10px;
     width: 300px;
     text-align: center;
@@ -175,8 +178,8 @@ margin-left: 7px;
     /*automático para as laterais*/
     margin: 75px auto;
     padding: 50px;
-		background: radial-gradient(80% 80%, #d6a76a, #fff);
-		box-shadow: 4px 5px 5px #994d00;
+		/* background: radial-gradient(100% 80%, #99ff99, #fff); */
+		box-shadow: 4px 5px 5px #80ff80;
   }
 
   /*formatar os inputs que tem a classe "campo" que estão dentro da
@@ -510,34 +513,75 @@ margin-top: 5px;
 	text-decoration: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color:#c68c53;
+	/* background-color:#80d4ff; */
+	/* background-color:#c68c53; */
 	border-radius: 6px ;
 	width: 200px;
-	border: #996633;
-	box-shadow: 4px 4px 1px #994d00;
+	/* border: #996633; */
+	/* box-shadow: 2px 2px 1px  #0099e6; */
 	font-size: 25px;
 	font-family: "Times New Roman";
 	margin: 5px 5px;
-	color: #4d2600;
-	text-shadow: 1px 1px 1px #994d00;
+	/* color: #002233;
+	text-shadow: 2px 2px 2px #00aaff; */
 }
 
-.btTelaInicial:hover{
-	box-shadow: 6px 6px 8px #994d00;
+#botaoJogar{
+	background-color:#ffb3b3;
+	border:  #ff6666;
+	box-shadow: 2px 2px 1px   #ff4d4d;
+	color: #800000;
+	text-shadow: 2px 2px 2px #cc0000;
+}
+#botaoJogar:hover{
+	box-shadow: 6px 6px 8px #ff3333;
+}
+#botaoCadastrar{
+	background-color: #c2f0c2;
+	border: #239023;
+	box-shadow: 2px 2px 1px   #2db92d;
+	color:   #0f3e0f;
+	text-shadow: 2px 2px 2px #239023;
+}
+
+#botaoCadastrar:hover{
+	box-shadow: 6px 6px 8px  #46d246;
+}
+
+#botaoComoJogar{
+	background-color:#ffff99;
+	border: #e6e600;
+	box-shadow: 2px 2px 1px #e6e600;
+	color:  #4d4d00;
+	text-shadow: 2px 2px 2px #cccc00;
+}
+#botaoComoJogar:hover{
+	box-shadow: 6px 6px 8px #b3b300;
+}
+
+#botaoSobre{
+	background-color:#ffdd99;
+	border: #ffcc66;
+	box-shadow: 2px 2px 1px  #ffbb33;
+	color: #664400;
+	text-shadow: 2px 2px 2px #e69900;
+}
+#botaoSobre:hover{
+	box-shadow: 6px 6px 8px  #ffaa00;
 }
 
 .botoes{
 	/* background-color: green; */
-	width: 270px;
+	width: 200px;
 			/* cima direita baixo esquerda */
-	margin: 50px auto 10px auto;
+	margin: 0 auto 5px auto;
 }
 
 .botaoVoltar{
 text-align: center;
 text-decoration: none;
-padding-top: 10px;
-padding-bottom: 10px;
+padding-top: 5px;
+padding-bottom: 2px;
 background-color:#c68c53;
 color: #000000;
 border-radius: 6px ;
@@ -546,7 +590,7 @@ border: #996633;
 box-shadow: 4px 4px 1px #994d00;
 font-size: 20px;
 font-family: "Times New Roman";
-margin: 5px 5px;
+margin: 2px 2px;
 float: right;
 }
 
@@ -554,10 +598,15 @@ float: right;
 box-shadow: 6px 6px 8px #994d00;
 }
 
+.logo{
+ height: 350px;
+}
+
 #logo, #imagemLogo{
- width: 900px;
- height: 300px;
- margin: 10px auto 0 auto;
+ width: 800px;
+ height: 400px;
+ margin: 0 auto 0 auto;
+	padding: 0;
 }
 
  /* FONTE DAS LABELS DOS FORMULÁRIOS */
@@ -565,4 +614,14 @@ box-shadow: 6px 6px 8px #994d00;
 	font-size: 20px;
 	font-family: "Times New Roman";
 	color: #4d2600;
+}
+
+
+
+#imagemProf{
+
+	width: 20px;
+	height: 20px;
+	margin: 200px 10px auto auto;
+	background: green;
 }
