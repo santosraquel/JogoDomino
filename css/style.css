@@ -169,8 +169,8 @@ margin-left: 7px;
 
 /* TELA LOGIN */
 .login{
-    background-color: #99ff99;
-  	border: 1px solid #006600;
+    background-color:#ffe6e6;
+  	border: 1px solid #ff9999;
 		border-radius: 10px;
     width: 300px;
     text-align: center;
@@ -178,8 +178,8 @@ margin-left: 7px;
     /*automático para as laterais*/
     margin: 75px auto;
     padding: 50px;
-		/* background: radial-gradient(100% 80%, #99ff99, #fff); */
-		box-shadow: 4px 5px 5px #80ff80;
+		 background: radial-gradient(100% 100%, #ffe6e6, #fff);
+		box-shadow: 4px 5px 5px #ff9999;
   }
 
   /*formatar os inputs que tem a classe "campo" que estão dentro da
