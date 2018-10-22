@@ -13,9 +13,15 @@
   <body>
  <div >
 
+
+
     <div class="logo">
       <div id="logo">
         <img src="img/logos.png" id="imagemLogo">
+        <!-- <div><img src="img/nume1.png" width="80px" height="80px" style="opacity: 0.6;filter: alpha(opacity=20);"></div>
+        <div><img src="img/numero2.png" width="80px" height="80px" style="opacity: 0.6;filter: alpha(opacity=20);"></div>
+        <div><img src="img/nume5.png" width="70px" height="70px" style="opacity: 0.6;filter: alpha(opacity=20);"></div> -->
+
       </div>
    </div>
 

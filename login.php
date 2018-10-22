@@ -28,7 +28,7 @@ session_start();
 
         <form class="" action="controle/ValidarLogin.php" method="post">
 
-          <img src="img/login.png"  height="150" alt=""> <br>
+          <img src="img/criancaRoda.png"  height="200" width="250"> <br>
 
             <label for="" class="fontLabel"><b>Usuário ou E-mail:</b></label><br>
             <input type="text" name="usuario" value="" class="campo" placeholder="usuario@email.com"><br>
@@ -40,7 +40,11 @@ session_start();
             <label for="lembrar"><b>Lembrar minha senha</b></label>
             <br>
 
-            <input type="submit" name="" value="Entrar" class="botao entrar"><br> <br>
+            <input type="submit" name="" value="Entrar" class="botao entrar">
+            
+
+            <br> <br>
+
 
             <a href="esqueceuSenha.php">Esqueceu a senha?</a> <br>
             <a href="alterarSenha.php">Alterar senha</a> <br>

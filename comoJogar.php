@@ -10,11 +10,15 @@
   </head>
   <body>
 
-    <div class="RegrasJogo">
+    <!-- <div class="RegrasJogo">
 
-      <h2><b>Como o jogo funciona:</b></h2>
-      <br>
+
+      <div class="" align="center" height="200" width="250" >
+
+      </div> -->
+
       <div id="regras">
+        <img src="img/regras.png"  width="550" height="200" padding="0" margin="0">
         <ul>
           <li>O jogo inicia com a distribuição automática das
           peças de dominó (7 peças) para cada jogador (2 jogadores);</li>

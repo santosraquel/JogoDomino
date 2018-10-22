@@ -15,7 +15,7 @@ session_start();
 
       <div class="cadastro">
 
-        <img src="img/cadast.png"  height="150" width="160"alt=""> <br>
+        <img src="img/criancaLivros.png"  height="300" width="330" align="center"> <br>
           <?php
               if(isset($_SESSION['msg_ok'])){
                 echo $_SESSION['msg_ok'];

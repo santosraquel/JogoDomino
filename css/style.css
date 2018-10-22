@@ -20,6 +20,7 @@ body{
 	margin: 0 auto ;
 	border-radius: 6px;
 	background-color: #DEB887;
+	/* background-color: #dab3ff; */
 }
 
 #containerMenor{
@@ -30,6 +31,9 @@ body{
 	margin: 10px 10px 10px 10px ;
 	border-radius: 6px;
 	background: url('../img/mad4.jpg');
+	/* background: url('../img/campoo.jpg'); */
+	/* background-color: #e6ccff; */
+
 	background-attachment: fixed;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -169,17 +173,17 @@ margin-left: 7px;
 
 /* TELA LOGIN */
 .login{
-    background-color:#ffe6e6;
-  	border: 1px solid #ff9999;
+    background-color:#cc99ff;
+  	border: 1px solid #008f83;
 		border-radius: 10px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     /*20px para cima e para baixo*/
     /*automático para as laterais*/
     margin: 75px auto;
     padding: 50px;
-		 background: radial-gradient(100% 100%, #ffe6e6, #fff);
-		box-shadow: 4px 5px 5px #ff9999;
+		 background: radial-gradient(80% 80%, #009e91, #fff);
+		box-shadow: 4px 5px 5px #008075;
   }
 
   /*formatar os inputs que tem a classe "campo" que estão dentro da
@@ -188,7 +192,7 @@ margin-left: 7px;
   com propriedades comuns
   */
   .login .campo, .login .botao{
-    border: 1px solid #86592d;
+    border: 1px solid #008f83;
 		border-radius: 4px;
     /*"engorda" os elementos da classe campo*/
     padding: 10px 5px;
@@ -197,22 +201,24 @@ margin-left: 7px;
 
   /*aplica essas propriedades somente no botão*/
   .login .botao{
-    background-color:#c68c53;
+    background-color:#00ebd7;
     color: #000000;
+		font-family: "Times New Roman";
+		font-size: 15px;
 		border-radius: 6px ;
 		width: 100px;
-		border: #996633;
-		box-shadow: 4px 4px 1px #994d00;
+		border:#008f83;
+		box-shadow: 4px 4px 1px #00ad9f;
   }
 
 	.login .botao:hover{
-		box-shadow: 4px 4px 7px #994d00;
+		box-shadow: 5px 5px 8px #007067;
 	}
 
 
 	/* PÁGINA PRINCIPAL */
 	#menu-topo ul{
-			 /* Só aplica-se ao elemento ul
+			 /* Só aplica-se ao elemenimes New Romano ul
 			 que está dentro do id menu-topo */
 			 background-color:#996633;
 			 list-style-type: none;
@@ -241,17 +247,17 @@ margin-left: 7px;
 
 		 /* TELA CADASTRO */
 		 		.cadastro{
-			 	background-color: #ffffff;
- 		  	border: 1px solid #86592d;
+			 	background-color: #cc99ff;
+ 		  	border: 1px solid #008f83;
  				border-radius: 10px;
- 		    width: 300px;
+ 		    width: 400px;
  		    text-align: center;
  		    /*20px para cima e para baixo*/
  		    /*automático para as laterais*/
  		    margin: 30px auto;
  		    padding: 50px;
- 				background: radial-gradient(80% 80%, #d6a76a, #fff);
- 				box-shadow: 4px 5px 5px #994d00;
+ 				background: radial-gradient(80% 80%, #009e91, #fff);
+ 				box-shadow: 4px 5px 5px #008075;
  		  }
 
  		  /*formatar os inputs que tem a classe "campo" que estão dentro da
@@ -260,7 +266,7 @@ margin-left: 7px;
  		  com propriedades comuns
  		  */
  		  .cadastro .campo, .cadastro .botao{
- 		    border: 1px solid #86592d;
+ 		    border: 1px solid #008f83;
  				border-radius: 4px;
  		    /*"engorda" os elementos da classe campo*/
  		    padding: 10px 5px;
@@ -269,53 +275,50 @@ margin-left: 7px;
 
  		  /*aplica essas propriedades somente no botão*/
  		  .cadastro .botao{
- 		    background-color:#c68c53;
+ 		    background-color:#00ebd7;
+				font-size: 15px;
+				font-family: "Times New Roman";
  		    color: #000000;
  				border-radius: 6px ;
  				width: 100px;
- 				border: #996633;
- 				box-shadow: 4px 4px 1px #994d00;
+ 				border: #008f83;
+ 				box-shadow: 4px 4px 1px #00ad9f;
 				margin: 10px;
 				/* clear: left; */
  		  }
 
 			.cadastro #botaoVoltar{
- 		    /* background-color:#c68c53;
- 		    color: #000000;
- 				border-radius: 6px ;
- 				width: 100px;
-				height: 15px;
- 				border: #996633;
- 				box-shadow: 4px 4px 1px #994d00;
-				float: inherit;
-				font-size: 14px;
-				font-family: arial; */
 				display: inline;
 				text-align: center;
 				text-decoration: none;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				background-color:#c68c53;
+				padding-bottom: 7px;
+				background-color:#00ebd7;
 				border-radius: 6px ;
 				width: 100px;
-				border: #996633;
-				box-shadow: 4px 4px 1px #994d00;
-				font-size: 15px;
+				height: 25px;
+				border: #008f83;
+				box-shadow: 4px 4px 1px #00ad9f;
+				/* font-size: 15px; */
 				font-family: serif;
 				color: #000000;
+				margin:10px;
 				/* text-shadow: 1px 1px 1px #994d00; */
 
  		  }
 
  			.cadastro .botao:hover{
- 				box-shadow: 4px 4px 7px #994d00;
+ 				box-shadow: 4px 4px 7px #007067;
+ 			}
+
+			.cadastro #botaoVoltar:hover{
+ 				box-shadow: 4px 4px 7px #007067;
  			}
 
 
 			/* TELA ESQUECEU SENHA */
  		 			.esqueceuSenha{
-					background-color: #ffffff;
-  		  	border: 1px solid #86592d;
+					background-color:#cc99ff;
+				  border: 1px solid #008f83;
   				border-radius: 10px;
   		    width: 300px;
   		    text-align: center;
@@ -323,12 +326,12 @@ margin-left: 7px;
   		    /*automático para as laterais*/
   		    margin: 110px auto;
   		    padding: 50px;
-  				background: radial-gradient(80% 80%, #d6a76a, #fff);
-  				box-shadow: 4px 5px 5px #994d00;
+  				background: radial-gradient(80% 80%, #009e91, #fff);
+  				box-shadow: 4px 5px 5px #008075;
   		  }
 
   		  .esqueceuSenha .campo, .esqueceuSenha .botao{
-  		    border: 1px solid #86592d;
+  		    border: 1px solid #008f83;
   				border-radius: 4px;
   		    /*"engorda" os elementos da classe campo*/
   		    padding: 10px 5px;
@@ -337,41 +340,43 @@ margin-left: 7px;
 
 
   		  .esqueceuSenha .botao{
-  		    background-color:#c68c53;
-  		    color: #000000;
+					background-color:#00ebd7;
+			    color: #000000;
   				border-radius: 6px ;
-  				width: 100px;
-  				border: #996633;
-  				box-shadow: 4px 4px 1px #994d00;
+  				width: 120px;
+  				border: #008f83;
+  				box-shadow: 3px 4px 4px #008075;
  					clear: left;
  					margin: 10px;
   		  }
 
   			.esqueceuSenha .botao:hover{
-  				box-shadow: 4px 4px 7px #994d00;
+  				box-shadow: 6px 6px 9px #007067;
   			}
 
 
+
+
 				/* TELA COMO JOGAR */
-						.RegrasJogo{
-						background-color: #ffffff;
-	   		  	border: 1px solid #86592d;
+						#regras{
+						background-color: #cc99ff;
+					  border: 1px solid #008f83;
 	   				border-radius: 10px;
-	   		    width: 900px;
+	   		    width: 700px;
 	   		    text-align: center;
 	   		    /*20px para cima e para baixo*/
 	   		    /*automático para as laterais*/
-	   		    margin: 20px auto;
+	   		    margin: 10px auto;
 	   		    padding: 50px;
-	   				background: radial-gradient(80% 80%, #d6a76a, #fff);
-	   				box-shadow: 4px 5px 5px #994d00;
+	   				background: radial-gradient(90% 90%, #009e91, #fff);
+	   				box-shadow: 4px 5px 5px #008075;
 						font-size: 25px;
 						font-family: inherit;
 	   		    }
 
 				.regras{
-					font-size: 20px;
 					text-align: justify;
+					font-size: 20px;
 				}
 
 .imagensDomino{
@@ -388,8 +393,8 @@ margin-left: 7px;
 
 				/* TELA SOBRE */
 				.sobre, .RegrasJogo{
-	   		    background-color: #ffffff;
-	   		  	border: 1px solid #86592d;
+						background-color: #cc99ff;
+						border: 1px solid #008f83;
 	   				border-radius: 10px;
 	   		    width: 900px;
 	   		    text-align: center;
@@ -398,8 +403,8 @@ margin-left: 7px;
 	   		    /*automático para as laterais*/
 	   		    margin: 20px auto;
 	   		    padding: 50px;
-	   				background: radial-gradient(80% 80%, #dfbf9f, #fff);
-	   				box-shadow: 4px 5px 5px #994d00;
+						background: radial-gradient(80% 70%, #009e91, #fff);
+		 				box-shadow: 4px 5px 5px #008075;
 						font-size: 25px;
 						/* font-family: "Times New Roman"; */
 
@@ -442,11 +447,23 @@ margin-left: 7px;
 .containerMontante{
 	width: 380px;
 	height: 230px;
-	background-color: #DEB887;
+	background-color: #cc99ff;
+	border-radius: 10px;
+	border: 4px solid #008f83;
+	box-shadow: 2px 3px 3px #008075;
+	float: right;
+	text-align: center;
+	background: radial-gradient(80% 80%, #009e91, #fff);
+	/* background-color: #00000;
 	border-radius: 10px;
 	border: solid 4px #331a00;
-	box-shadow: 2px 3px 3px #994d00;
-	float: right;
+	box-shadow: 2px 3px 3px #994d00;*/
+
+ /* width: 400px; */
+ /*20px para cima e para baixo*/
+ /*automático para as laterais*/
+ /* margin: 30px auto;
+ padding: 50px; */
 }
 
 #montante{
@@ -527,14 +544,14 @@ margin-top: 5px;
 }
 
 #botaoJogar{
-	background-color:#ffb3b3;
-	border:  #ff6666;
-	box-shadow: 2px 2px 1px   #ff4d4d;
-	color: #800000;
-	text-shadow: 2px 2px 2px #cc0000;
+	background-color:#dd99ff;
+	border:  #7700b3;
+	box-shadow: 2px 2px 1px #c44dff;
+	color:#33004d;
+	text-shadow: 2px 2px 2px #550080;
 }
 #botaoJogar:hover{
-	box-shadow: 6px 6px 8px #ff3333;
+	box-shadow: 6px 6px 8px #8800cc;
 }
 #botaoCadastrar{
 	background-color: #c2f0c2;
@@ -578,24 +595,25 @@ margin-top: 5px;
 }
 
 .botaoVoltar{
-text-align: center;
+text-align:center;
 text-decoration: none;
-padding-top: 5px;
-padding-bottom: 2px;
-background-color:#c68c53;
+padding-top:5px;
+padding-bottom: 5px;
+background-color:#00ebd7;
 color: #000000;
 border-radius: 6px ;
+height: 25px;
 width: 100px;
-border: #996633;
-box-shadow: 4px 4px 1px #994d00;
-font-size: 20px;
+border: #008f83;
+box-shadow: 4px 4px 1px #00ad9f;
+font-size: 15px;
 font-family: "Times New Roman";
 margin: 2px 2px;
 float: right;
 }
 
 .botaoVoltar:hover{
-box-shadow: 6px 6px 8px #994d00;
+box-shadow: 6px 6px 8px #007067;
 }
 
 .logo{
@@ -613,7 +631,7 @@ box-shadow: 6px 6px 8px #994d00;
 .fontLabel{
 	font-size: 20px;
 	font-family: "Times New Roman";
-	color: #4d2600;
+	color: #000000;
 }
 
 

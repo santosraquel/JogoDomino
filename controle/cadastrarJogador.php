@@ -5,7 +5,7 @@
   </head>
   <body>
 
-    <h1>Os Jogadores Cadastrados são:</h1>
+  
 
 
 
@@ -51,8 +51,8 @@ if($senha != $confirmarSenha || $senha == ""){
 if($validarCampos){
   $senha = md5($senha . "domino");
   $senha = md5($senha);
-  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
-  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','','domino');
   // include_once("bancoDados/conexao.php");
   $sqlinsert = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome','$email','$senha')";
   echo $sqlinsert;
@@ -63,7 +63,7 @@ if(mysqli_insert_id($conexaoBanco)){
   header("Location: ../login.php"); // ABRE O ARQUIVO INDEX.PHP QUANDO CLICAR NO BOTÃO
 
 }else{
-  $_SESSION['msg_erro'] = "<p style='color:#000000;'>Atenção: Cadastro do jogador não foi realizado com sucesso!</p>";
+  $_SESSION['msg_erro'] = "<p style='color:#000000;'>Atenção: Cadastro do jogador não realizado com sucesso!</p>";
   // header("Location: ValidarLogin.php"); // MOSTRA UMA MENSAGEM DE ERRO
 }
  ?>

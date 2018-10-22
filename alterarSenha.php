@@ -29,9 +29,9 @@
             <label for=""><b>Confirmar Nova Senha:</b></label><br>
             <input type="password" name="confirmarNovaSenha" value="" class="campo"  placeholder="Digite sua senha novamente"><br> <br>
 
-            <input type="submit" name="" value="Redefinir Senha" class="botao redefinirSenha">
+            <input type="submit" name="" value="Redefinir Senha" class="botao redefinirSenha" id="redefinirSenha">
 
-            <input type="reset" name="" value="Limpar" class="botao limpar">
+            <input type="reset" name="" value="Limpar" class="botao limpar" id="limpar">
 
 
 
