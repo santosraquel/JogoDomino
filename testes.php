@@ -1,0 +1,3 @@
+<div draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'This text may be dragged')">
+  This text <strong>may</strong> be dragged.
+</div>

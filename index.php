@@ -30,7 +30,23 @@ if(!isset($_SESSION['login'])){
   <!--(/jogodomino/css/style.css): pasta jogodomino, dentro dessa pasta há uma outra pasta chamada css com um arquivo style.css -->
 
   <script src= "jquery/jquery-3.3.1.min.js"></script>
-  <!-- <style media="screen"> </style> -->
+  <script src="jqueryUi/jquery-ui.js"></script>
+  <link rel="stylesheet" href="jqueryUi/jquery-ui.css">
+  <script>
+  function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+  </script>
 
 </head>
 <body>
@@ -45,11 +61,11 @@ if(!isset($_SESSION['login'])){
           <p><b>Pontos:</b></p>
         </div> -->
 
-        <div class= "containerPecas" id="containerJogador2" ondrop="drop(event)" ondragover="allowDrop(event)" >
-            <div id="nomeJogador2" align="center" > <b>JOGADOR 2</b></div>
+        <div class= "containerPecas" id="containerJogador2"  >
+          <div id="nomeJogador2" align="center" > <b>JOGADOR 2</b></div>
 
-            <div id="jg2Peca1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
-            <div id="jg2Peca2"> </div>
+            <div id="jg2Peca1" ondrop="drop(event)" ondragover="allowDrop(event)" > </div>
+            <div id="jg2Peca2" > </div>
             <div id="jg2Peca3"> </div>
             <div id="jg2Peca4"> </div>
             <div id="jg2Peca5"> </div>
@@ -82,10 +98,10 @@ if(!isset($_SESSION['login'])){
 
         </div>
 
-    <div class="dominos" id="domino0">
+    <div class="dominos" id="domino0" width="50px" height="90px" draggable="true" ondragstart="drag(event)">
           <div class="face versoDomino" ></div>
-          <div class="face frenteDomino">
-            <img src="dominos/dom0.png" alt="">
+          <div class="face frenteDomino" >
+          <span><img src="dominos/dom0.png"></span>
         </div>
 
       </div>
@@ -94,7 +110,7 @@ if(!isset($_SESSION['login'])){
         <div class="dominos" id="domino1">
           <div class="face versoDomino"></div>
           <div class="face frenteDomino">
-            <img src="dominos/dom1.png" alt="">
+            <img src="dominos/dom1.png" >
           </div>
         </div>
 

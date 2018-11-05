@@ -13,17 +13,25 @@
 
     </div> -->
 
+    <?php
+        if(count($erro) > 0)
+        foreach ($erro as $msg) {
+          echo "<p>$msg</p>";
+        }
+
+     ?>
+
       <div class="esqueceuSenha">
 
         <form class="" action="controle/redefinirSenha.php" method="post">
 
             <label for=""><b>E-mail:</b></label><br>
-            <input type="text" name="email" value="" class="campo" placeholder="usuario@email.com"><br>
+            <input type="text" name="email" value="email" class="campo" placeholder="usuario@email.com"><br>
 
 
-            <input type="submit" name="" value="Redefinir Senha" class="botao redefinirSenha">
+            <input type="submit" name="redefinirSenha" value="Redefinir Senha" class="botao redefinirSenha">
 
-            <input type="reset" name="" value="Limpar" class="botao limpar">
+            <input type="reset" name="Limpar" value="Limpar" class="botao limpar">
 
 
 
