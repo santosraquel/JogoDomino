@@ -21,7 +21,7 @@
             <input type="text" name="email" value="" class="campo" placeholder="usuario@email.com"><br>
 
             <label class="fontLabel"><b>Senha atual:</b></label><br>
-            <input type="password" name="senha" value="" class="campo"  placeholder="Digite sua senha"><br>
+            <input type="password" name="senhaAtual" value="" class="campo"  placeholder="Digite sua senha"><br>
 
             <label class="fontLabel"><b>Nova Senha:</b></label><br>
             <input type="password" name="novaSenha" value="" class="campo"  placeholder="Digite sua senha"><br>

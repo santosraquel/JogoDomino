@@ -5,7 +5,7 @@
   </head>
   <body>
 
-  
+
 
 
 
@@ -51,11 +51,11 @@ if($senha != $confirmarSenha || $senha == ""){
 if($validarCampos){
   $senha = md5($senha . "domino");
   $senha = md5($senha);
-  // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
-  $conexaoBanco = mysqli_connect('localhost','root','','domino');
+  $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
+  // $conexaoBanco = mysqli_connect('localhost','root','','domino');
   // include_once("bancoDados/conexao.php");
   $sqlinsert = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome','$email','$senha')";
-  echo $sqlinsert;
+  echo "Cadastro realizado com Sucesso!";
   $resultado = mysqli_query($conexaoBanco, $sqlinsert);
 }
 if(mysqli_insert_id($conexaoBanco)){
