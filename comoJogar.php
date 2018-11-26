@@ -31,7 +31,7 @@
           <li>Terá uma peça responsável por iniciar o jogo;</li>
           <li>Na sua vez, cada jogador clica e arrasta a peça escolhida de forma a encaixar na peça que resolva
             a expressão matemática ou que tenha a expressão referente ao resultado da peça que está no tabuleiro;</li>
-            <img src="dominos/dominos.png" alt="" id="imagensDomino">
+            <!-- <img src="dominos/dominos.png" alt="" id="imagensDomino"> -->
             <li>Vence o jogo o jogador que encaixar todas as suas peças primeiro.</li>
         </ul>
 

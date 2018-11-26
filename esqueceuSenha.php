@@ -13,13 +13,15 @@
 
     </div> -->
 
-    <?php
-        if(count($erro) > 0)
-        foreach ($erro as $msg) {
-          echo "<p>$msg</p>";
-        }
+    <!-- <?php
+      //   if(count($erro) > 0){
+      //
+      //   foreach ($erro as $msg) {
+      //     echo "<p>$msg</p>";
+      //   }
+      // }
 
-     ?>
+     ?> -->
 
       <div class="esqueceuSenha">
 
@@ -33,9 +35,9 @@
 
             <input type="reset" name="Limpar" value="Limpar" class="botao limpar">
 
-
-
         </form>
+        <br>
+        <p id="LinkLogin">Deseja logar-se?<a href="login.php">Clique aqui para logar.</a></p>
       </div>
 
   </body>

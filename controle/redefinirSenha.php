@@ -6,7 +6,7 @@
   </head>
   <body>
 
-        <?php
+        <!-- <?php
         // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
           $conexaoBanco = mysqli_connect('localhost','root','','domino');
           if(isset($_POST['redefinirSenha'])){
@@ -50,7 +50,7 @@
           }
 
 
-          }
+          } -->
 
         ?>
 

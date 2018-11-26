@@ -19,7 +19,8 @@
           <img src="img/logos.png" width="500px" height="300px">
       </div>
       <p>   O jogo DominóMath, foi criado em 2018, por Raquel dos Santos de Oliveira, estudante do 4° ano do Curso Técnico em Informática Integrado ao Ensino Médio, do Instituto Federal do Paraná - Campus Paranavaí.</p>
-      <p>Este jogo é fruto do seu Trabalho de Conclusão de Curso (TCC) que teve como tema: "A Tecnologia da Informação e Comunicação como recurso didático para o Ensino da Matemática: Dominó Matemático", que teve como orientadora a Prof.ª Dra. Angela Fontana Marques e Co-orientadora a Prof.ª M.ª Késsia Rita da Costa Marchi.</p>
+      <p>Este jogo é fruto do seu Trabalho de Conclusão de Curso (TCC) que teve como tema: "A Tecnologia da Informação e Comunicação como recurso didático para o Ensino da Matemática: Dominó Matemático", sob orientação da Prof.ª Dra. Angela Fontana Marques -Doutora em Ensino de Ciências e Educação Matemática-,
+        com Co-orientação da Prof.ª M.ª Késsia Rita da Costa Marchi -Mestra em Ciência da Computação- e ajuda do professor Rafael Zottesso.</p>
       <br>
 
       <h2>Porque desenvolveu este jogo?</h2>
