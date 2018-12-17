@@ -495,6 +495,20 @@ margin-left: 7px;
 
 }
 
+/* .PecasJg{
+	width: 35px; /* largura*/
+	/* height: 70px; /*altura*/
+	/* border-radius: 10px; */
+	/* border: 1px solid #994d00; */
+	/*margin-left: 25px;*/
+	/* float: left; */
+
+	/* margin-top: 2px; */
+	/* padding: 3px; */
+	/*margin-top: 3px;*/
+	/* padding: 2px; */
+/* } */
+
 .PecasJg{
 	width: 45px; /* largura*/
 	height: 85px; /*altura*/
@@ -502,8 +516,11 @@ margin-left: 7px;
 	border: 1px solid #994d00;
 	margin-left: 25px;
 	float: left;
-	margin-top: 3px;
-	padding: 3px;
+	margin-bottom: 3px;
+	margin-top: 4px;
+	/*margin-top: 3px;*/
+	 padding: 2px;
+
 
 }
 

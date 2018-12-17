@@ -14,9 +14,9 @@
 
     // 2. Verificar se o email e a senha que o usuário digitou é a mesma que está no banco.
     $email = $_POST['email'];
-    $senha = trim($_POST["senha"]);
+    // $senha = trim($_POST["senha"]);
 
-    $senha = md5($senha . "domino");
+    //$senha = md5($senha . "domino");
     $senha = md5($senha);
 
     $novaSenha = trim($_POST["novaSenha"]);
@@ -24,7 +24,7 @@
     $novaSenha = md5($novaSenha . "domino");
     $novaSenha = md5($novaSenha);
     $id = trim($_POST["idUsuario"]);
-    $sql = "SELECT email, senha FROM usuario WHERE email='$email' AND senha='$senha'";
+    $sql = "SELECT idUsuario, email, senha FROM usuario WHERE email='$email' AND senha='$senha'";
     $resp = mysqli_query($conexaoBanco, $sql) or die ("Erro ao cadastrar");
     echo "$sql";
 
@@ -41,7 +41,7 @@
       $validarCampos = false;
     }
 
-    $atualizarSenha = ("UPDATE usuario SET senha = '$novaSenha' WHERE idUsusario = '$id'");
+    $atualizarSenha = ("UPDATE usuario SET senha = '$novaSenha' WHERE idUsusario = '$idU'");
     echo "$atualizarSenha";
     // 4. Caso estiver tudo OK atualizar no banco de dados e emitir uma mensagem.
 

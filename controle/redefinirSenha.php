@@ -4,53 +4,54 @@
     <meta charset="utf-8">
     <title>Redefinir Senha</title>
   </head>
-  <body>
+  <body style="background-color:#cceeff;">
 
-        <!-- <?php
+  <div class="imagemProf">
+  <img src="../img/prof.png" id="imagemProf" style="float: right; width: 600px; height: 550px;">
+  </div>
+        <?php
         // $conexaoBanco = mysqli_connect('localhost','root','mysql','domino');
           $conexaoBanco = mysqli_connect('localhost','root','','domino');
-          if(isset($_POST['redefinirSenha'])){
-
-            $email = $mysqli->escape_string($_POST['email']);
-            // somente se o email digitado for inválido
-            if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-                $erro[] = "E-mail inválido.";
 
 
+          $email = $_POST['email'];
+          $sql = "SELECT email FROM usuario WHERE email ='$email'";
+          $resultado = mysqli_query($conexaoBanco, $sql) or die ("Erro ao cadastrar");
+          // echo "$sql";
+          $validarCampos = true;
+          if($email == ""){
 
-            $sql_code = "SELECT email FROM usuario WHERE email = '$email'";
-            $sql_query = $mysqli->query($sql_code) or die($mysqli->error);
-            $dado = $sql_query->fetch_assoc();
-            $total = $sql_query->num_rows;
-
-            if($total == 0){
-              $erro[] = "O e-mail informado não existe!";
-            }
+            $validarCampos = false;
+          }
 
 
-            // Se o email for válido
-            if(count($erro) == 0 && $total > 0 ){
-            //primeiro pegar a hora em segundos atual e criptografar(minimo 0 e máximo 6 caracter)
-            $novaSenha = substr(md5(time()), 0, 6); // está senha será enviada por e-mail para o usuário
-            $nsCriptografada = md5(md5($novaSenha)); // está senha será alterada no banco de dados
+          if (mysqli_num_rows($resultado) > 0) {
+            session_start();
+            $_SESSION['alterarSenha'] = "ok";
+            header("Location: ../alterarSenha.php"); // MOSTRA UMA MENSAGEM DE ERRO
 
-            // Somente se o e-mail de nova senha for enviado para o usuário
-            // if(mail($email, "Sua nova Senha", "Sua nova senha:".$novaSenha)){
-            if(1 == 1){
-
-              // é que a senha será alterada no banco de dados
-              $sql_update = "UPDATE usuario SET senha = '$nsCriptografada' WHERE email = '$email'";
-              $sql_query = $mysqli->query($sql_code) or die($mysqli->error);//atualizando senha no banco de dados
-
-              if($sql_query)
-                $erro[] = "Senha alterada com sucesso!";
-
-            }
+          }
+          //Se não...
+          else{
+            exit ("<p style='background-color:#cc99ffs;
+          	border: 1px solid #008f83;
+          	border-radius: 10px;
+          	width: 300px;
+          	text-align: center;
+          	margin: 30px auto;
+          	padding: 50px;
+          	background: radial-gradient(90% 90%, #009e91, #fff);
+          	box-shadow: 4px 5px 5px #008075;
+            color:  #cc0000;
+            font-size:30px;
+            font-family:Times New Roman;
+            margin: 100px auto 200px 450px;
+            float: center;'><b>
+            Atenção: E-mail inválido ou E-mail não existe na base de dados!</b></p>");
 
           }
 
 
-          } -->
 
         ?>
 

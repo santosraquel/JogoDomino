@@ -9,26 +9,27 @@
   </head>
   <body>
 
-    <!-- <div id="menu-topo">
 
-    </div> -->
 
-    <!-- <?php
-      //   if(count($erro) > 0){
-      //
-      //   foreach ($erro as $msg) {
-      //     echo "<p>$msg</p>";
-      //   }
-      // }
-
-     ?> -->
 
       <div class="esqueceuSenha">
 
-        <form class="" action="controle/redefinirSenha.php" method="post">
+        <?php
+
+            if(isset($_SESSION['msg_ok'])){
+              echo $_SESSION['msg_ok'];
+              unset($_SESSION['msg_ok']);}
+
+            // } else if (isset($_SESSION['msg_erro'])){
+            //   echo $_SESSION['msg_erro'];
+            //   unset($_SESSION['msg_erro']);
+            // }
+         ?>
+
+        <form class="" action="alterarSenha.php" method="post">
 
             <label for=""><b>E-mail:</b></label><br>
-            <input type="text" name="email" value="email" class="campo" placeholder="usuario@email.com"><br>
+            <input type="text" name="email" value="" class="campo" placeholder="usuario@email.com"><br>
 
 
             <input type="submit" name="redefinirSenha" value="Redefinir Senha" class="botao redefinirSenha">
@@ -40,5 +41,5 @@
         <p id="LinkLogin">Deseja logar-se?<a href="login.php">Clique aqui para logar.</a></p>
       </div>
 
-  </body>
-</html>
+    </body>
+  </html>
